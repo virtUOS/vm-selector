@@ -1,0 +1,102 @@
+{
+  "owner": {
+    "type": "text",
+    "hint": "Benutzerkennung"
+  },
+  "group": {
+    "type": "select",
+    "hint": "Organisationseinheit",
+    "options": [
+      "bio",
+      "fb1",
+      "fb3",
+      "geo",
+      "igb",
+      "ikw",
+      "inf",
+      "math",
+      "psycho",
+      "rz",
+      "rz-net",
+      "ub",
+      "usf",
+      "virtuos",
+      "wiwi"
+    ]
+  },
+  "name": {
+    "type": "text",
+    "hint": "Hostname"
+  },
+  "cpus": {
+    "hint": "Anzahl der CPUs",
+    "type": "select",
+    "options": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      32
+    ]
+  },
+  "mem": {
+    "hint": "Hauptspeicher",
+    "type": "select",
+    "options": [
+      "2GiB",
+      "4GiB",
+      "6GiB",
+      "8GiB",
+      "10GiB",
+      "12GiB",
+      "16GiB",
+      "32GiB"
+    ]
+  },
+  "disksize": {
+    "hint": "Plattengr\u00f6\u00dfe",
+    "type": "select",
+    "options": [
+      "32GiB",
+      "64GiB",
+      "128GiB",
+      "256GiB",
+      "512GiB",
+      "1024GiB"
+    ]
+  },
+  "net": {
+    "type": "select",
+    "hint": "Netzanschluss",
+    "options": [
+      "131.173.22.0/23",
+      "172.17.22.0/23"
+    ]
+  },
+  "os": {
+    "hint": "Betriebssystem",
+    "type": "select",
+    "options": [
+      "bionic",
+      "bullseye",
+      "buster",
+      "centos",
+      "cs8",
+      "cs9",
+      "debian",
+      "debian-10",
+      "debian-11",
+      "focal",
+      "jammy",
+      "other",
+      "sl7",
+      "ubuntu",
+      "ubuntu-18",
+      "ubuntu-20",
+      "ubuntu-22"
+    ]
+  }
+}
