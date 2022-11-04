@@ -34,3 +34,14 @@ header > * {
 	border-radius: 5px;
 	padding: 10px;
 }
+
+footer {
+	margin-top: 35px;
+	font-size: smaller;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: grey;
+}
