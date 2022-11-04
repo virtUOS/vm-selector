@@ -47,7 +47,16 @@ function add_vm() {
 		args += `${value} `;
 	}
 	const order = document.getElementById('order');
-	order.innerText = `${order.innerText}\n${args}`.trim();
+	const amount = document.getElementById('amount').value;
+	for (let i = 0; i < amount; i++) {
+		let args_i = args.replaceAll('{i}', pad(i, amount));
+		order.innerText = `${order.innerText}\n${args_i}`.trim();
+	}
+}
+
+function pad(number, max) {
+	const len = max.toString().length;
+	return number.toString().padStart(len, '0');
 }
 
 function copy() {

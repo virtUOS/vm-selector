@@ -23,6 +23,17 @@ header > * {
 	margin: 15px 0;
 }
 
+#info {
+	text-align: right;
+	font-size: smaller;
+	font-style: italic;
+	margin: 15px 0;
+}
+
+#amount {
+	width: 35px;
+}
+
 #selector {
 	display: grid;
 	grid-template-columns: 180px auto;
