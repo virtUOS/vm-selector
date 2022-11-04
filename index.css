@@ -1,7 +1,21 @@
 body {
 	font-family: sans;
-	width: 750px;
+	max-width: 750px;
 	margin: 0 auto;
+	padding: 0 5px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+header > * {
+	display: inline;
+	margin-right: 10px;
 }
 
 .buttons {
@@ -11,7 +25,7 @@ body {
 
 #selector {
 	display: grid;
-	grid-template-columns: 200px auto;
+	grid-template-columns: 180px auto;
 }
 
 #order {
