@@ -20,6 +20,9 @@ function build_ui(config) {
 			input.setAttribute('type', field.type);
 			input.setAttribute('id', key);
 			input.setAttribute('name', key);
+			if (field.default) {
+				input.value = field.default;
+			}
 			selector.appendChild(input);
 		} else if (field.type === 'select') {
 			const input = document.createElement('select');
@@ -30,6 +33,9 @@ function build_ui(config) {
 				option.setAttribute('value', value);
 				option.innerText = value;
 				input.appendChild(option);
+			}
+			if (field.default) {
+				input.value = field.default;
 			}
 			selector.appendChild(input);
 		}

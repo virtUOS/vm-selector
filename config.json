@@ -6,6 +6,7 @@
   "group": {
     "type": "select",
     "hint": "Organisationseinheit",
+    "default": "virtuos",
     "options": [
       "bio",
       "fb1",
