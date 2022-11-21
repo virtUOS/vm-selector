@@ -67,5 +67,6 @@ function pad(number, max) {
 
 function copy() {
 	const order = document.getElementById('order');
-	navigator.clipboard.writeText(order.innerText);
+	const text = `Beantragte VMs:\n${order.innerText}\n\nSSh-Key für owner:\nssh-ed25519 AAAAFHLKJC3…`
+	navigator.clipboard.writeText(text);
 }

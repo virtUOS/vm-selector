@@ -39,7 +39,7 @@ header > * {
 	grid-template-columns: 180px auto;
 }
 
-#order {
+pre {
 	background-color: #ddd;
 	border: 1px solid #666;
 	border-radius: 5px;
