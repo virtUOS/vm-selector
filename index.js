@@ -1,11 +1,19 @@
 fields = []
 
+/**
+ * Load configuration from config.json and trigger building the interface.
+ */
 function load_config() {
 	fetch('config.json')
-  .then((response) => response.json())
-  .then((data) => build_ui(data));
+		.then((response) => response.json())
+		.then((data) => build_ui(data));
 }
 
+/**
+ * Build user interface from configuration
+ *
+ * @config: The parsed configuration
+ */
 function build_ui(config) {
 	const selector = document.getElementById('selector');
 	for (const key in config) {
@@ -42,6 +50,9 @@ function build_ui(config) {
 	}
 }
 
+/**
+ * Add virtual machine to order by collicting values from the current state of the form.
+ */
 function add_vm() {
 	let args = '';
 	for (field of fields) {
@@ -60,11 +71,21 @@ function add_vm() {
 	}
 }
 
+/**
+ * Ensure number has a fixed length using zero for padding.
+ *
+ * @number: Number to apply padding to
+ * @max: Use string length of this number to determine padding
+ * @returns: String of number with padding
+ */
 function pad(number, max) {
 	const len = max.toString().length;
 	return number.toString().padStart(len, '0');
 }
 
+/**
+ * Copy assembled order to clipboard
+ */
 function copy() {
 	const order = document.getElementById('order');
 	const text = `Beantragte VMs:\n${order.innerText}\n\nSSh-Key für owner:\nssh-ed25519 AAAAFHLKJC3…`
