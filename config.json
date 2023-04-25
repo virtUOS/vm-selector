@@ -97,7 +97,8 @@
       "ubuntu",
       "ubuntu-18",
       "ubuntu-20",
-      "ubuntu-22"
+      "ubuntu-22",
+      "rl8"
     ]
   }
 }
