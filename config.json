@@ -82,11 +82,8 @@
     "hint": "Betriebssystem",
     "type": "select",
     "options": [
-      "bionic",
       "bullseye",
-      "buster",
       "centos",
-      "cs8",
       "cs9",
       "debian",
       "debian-10",
@@ -94,12 +91,11 @@
       "focal",
       "jammy",
       "other",
-      "sl7",
       "ubuntu",
-      "ubuntu-18",
       "ubuntu-20",
       "ubuntu-22",
-      "rl8"
+      "rl8",
+      "rl9"
     ]
   }
 }
