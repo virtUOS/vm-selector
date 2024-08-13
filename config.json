@@ -81,6 +81,7 @@
   "os": {
     "hint": "Betriebssystem",
     "type": "select",
+    "default": "cs9",
     "options": [
       "bookworm",
       "bullseye",
