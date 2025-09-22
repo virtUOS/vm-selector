@@ -18,6 +18,10 @@ header > * {
 	margin-right: 10px;
 }
 
+input, select {
+	border-radius: 5px;
+}
+
 .buttons {
 	text-align: right;
 	margin: 15px 0;
@@ -57,4 +61,18 @@ footer {
 footer a {
 	text-decoration: none;
 	color: grey;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+	select, input, button {
+		background-color: #333;
+		color: white;
+	}
+	pre {
+		background-color: #333;
+	}
 }
