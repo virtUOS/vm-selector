@@ -41,6 +41,7 @@ input, select {
 #selector {
 	display: grid;
 	grid-template-columns: 180px auto;
+	row-gap: 10px;
 }
 
 pre {
