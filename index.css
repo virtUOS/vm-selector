@@ -11,6 +11,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
+	border-bottom: 3px solid #E2001A;
+	padding-bottom: 10px;
 }
 
 header > * {
@@ -18,8 +20,31 @@ header > * {
 	margin-right: 10px;
 }
 
+header h1 {
+	color: #E2001A;
+}
+
+header img {
+	max-height: 60px;
+	width: auto;
+}
+
 input, select {
 	border-radius: 5px;
+}
+
+button {
+	background-color: #E2001A;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #c00016;
 }
 
 .buttons {
@@ -60,7 +85,11 @@ footer {
 
 footer a {
 	text-decoration: none;
-	color: grey;
+	color: #E2001A;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,7 +101,20 @@ footer a {
 		background-color: #333;
 		color: white;
 	}
+	button {
+		background-color: #E2001A;
+		color: white;
+	}
+	button:hover {
+		background-color: #ff1a2e;
+	}
 	pre {
 		background-color: #333;
+	}
+	header {
+		border-bottom-color: #E2001A;
+	}
+	footer a {
+		color: #ff4d5e;
 	}
 }
