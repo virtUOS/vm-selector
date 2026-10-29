@@ -73,10 +73,11 @@
   "net": {
     "type": "select",
     "hint": "Netzanschluss",
-    "options": [
-      "131.173.22.0/23",
-      "172.17.22.0/23"
-    ]
+    "options": {
+      "131.173.22.0/23 (Wissenschaft extern, virtUOS)": "131.173.22.0/23",
+      "131.173.16.0/22 (Rechenzentrum)": "131.173.16.0/22",
+      "172.17.22.0/23 (Wissenschaft intern)": "172.17.22.0/23"
+    }
   },
   "os": {
     "hint": "Betriebssystem",

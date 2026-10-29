@@ -36,10 +36,15 @@ function build_ui(config) {
 			const input = document.createElement('select');
 			input.setAttribute('id', key);
 			input.setAttribute('name', key);
-			for (const value of field.options) {
+			// Options may be a plain list of values or a map of label -> value.
+			// For a list, the value is also used as the label.
+			const options = Array.isArray(field.options)
+				? field.options.map((value) => [value, value])
+				: Object.entries(field.options);
+			for (const [label, value] of options) {
 				const option = document.createElement('option');
 				option.setAttribute('value', value);
-				option.innerText = value;
+				option.innerText = label;
 				input.appendChild(option);
 			}
 			if (field.default) {
